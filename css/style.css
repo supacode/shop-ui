@@ -138,6 +138,7 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  background: #f5f7f9;
 }
 
 .category {
@@ -158,9 +159,14 @@ body {
           flex: 1;
 }
 
+.category__img {
+  overflow: hidden;
+}
+
 .category__img--img {
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
   position: relative;
-  margin-right: -5rem;
   bottom: 0;
   right: 0;
   width: 90%;
@@ -199,6 +205,11 @@ body {
 .category__4 {
   background: #ffe4c5;
   color: #c56900;
+}
+
+.category:hover .category__img--img {
+  -webkit-transform: scale(1.3) rotate(7deg);
+          transform: scale(1.3) rotate(7deg);
 }
 
 .main-footer {
