@@ -173,6 +173,14 @@ body {
 
   &__content {
     flex: 0.45;
+
+    svg {
+      rect,
+      polyline {
+        stroke: $accent;
+      }
+    }
+
     h2 {
       font-size: 120%;
       color: $accent;

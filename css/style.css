@@ -252,6 +252,11 @@ body {
           flex: 0.45;
 }
 
+.newsletter__content svg rect,
+.newsletter__content svg polyline {
+  stroke: #e72b54;
+}
+
 .newsletter__content h2 {
   font-size: 120%;
   color: #e72b54;
