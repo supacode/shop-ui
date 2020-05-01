@@ -209,10 +209,6 @@ body {
   opacity: 0;
 }
 
-.product__add-cart ion-icon {
-  font-size: 2rem;
-}
-
 .main-footer {
   padding: 2rem 0;
   background: #fff;
