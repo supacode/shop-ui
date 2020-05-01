@@ -232,7 +232,7 @@ body {
 }
 
 .product__add-cart:hover {
-  background: rgba(231, 43, 84, 0.5);
+  background: #b11436;
 }
 
 .newsletter {
@@ -351,7 +351,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 120%;
+}
+
+.cart-item__quantity--add, .cart-item__quantity--reduce {
   font-size: 150%;
+  -webkit-transition: 0.4s ease-out color;
+  transition: 0.4s ease-out color;
 }
 
 .cart-item__quantity--add:hover, .cart-item__quantity--reduce:hover {
@@ -367,12 +373,15 @@ body {
 
 .cart-item__price {
   color: #e72b54;
-  font-weight: bold;
+  font-size: 120%;
 }
 
 .cart-item__remove {
   font-size: 150%;
   font-weight: bold;
+  -webkit-transition: 0.4s ease-out color;
+  transition: 0.4s ease-out color;
+  font-size: 150%;
 }
 
 .cart-item__remove:hover {
@@ -400,6 +409,23 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.cart__footer--to-home a svg {
+  margin-right: 0.5rem;
+  -webkit-transition: 0.4s ease-out transform;
+  transition: 0.4s ease-out transform;
+}
+
+.cart__footer--to-home a svg polyline,
+.cart__footer--to-home a svg line,
+.cart__footer--to-home a svg path {
+  stroke: #e72b54;
+}
+
+.cart__footer--to-home a:hover svg {
+  -webkit-transform: translateX(-8px);
+          transform: translateX(-8px);
 }
 
 .cart__footer--subtotal span {

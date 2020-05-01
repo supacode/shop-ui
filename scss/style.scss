@@ -164,7 +164,7 @@ body {
     padding: 1rem;
     opacity: 0;
     &:hover {
-      background: rgba($accent, 0.5);
+      background: darken($accent, 15);
     }
   }
 }
@@ -246,10 +246,12 @@ body {
     &__quantity {
       display: flex;
       align-items: center;
-      font-size: 150%;
+      font-size: 120%;
 
       &--add,
       &--reduce {
+        font-size: 150%;
+        transition: 0.4s ease-out color;
         &:hover {
           color: $accent;
         }
@@ -264,12 +266,14 @@ body {
 
     &__price {
       color: $accent;
-      font-weight: bold;
+      font-size: 120%;
     }
 
     &__remove {
       font-size: 150%;
       font-weight: bold;
+      transition: 0.4s ease-out color;
+      font-size: 150%;
       &:hover {
         color: $accent;
       }
@@ -284,9 +288,25 @@ body {
 
     &--to-home {
       a {
+        svg {
+          margin-right: 0.5rem;
+          transition: 0.4s ease-out transform;
+          polyline,
+          line,
+          path {
+            stroke: $accent;
+          }
+        }
+
         color: $accent;
         display: flex;
         align-items: center;
+
+        &:hover {
+          svg {
+            transform: translateX(-8px);
+          }
+        }
       }
     }
     &--subtotal {
