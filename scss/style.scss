@@ -148,6 +148,13 @@ body {
   }
 
   &__add-cart {
+    svg {
+      path,
+      circle,
+      polyline {
+        stroke: $light;
+      }
+    }
     background: $accent;
     transition: 0.4s ease-out;
     pointer-events: all;

@@ -225,6 +225,12 @@ body {
   opacity: 0;
 }
 
+.product__add-cart svg path,
+.product__add-cart svg circle,
+.product__add-cart svg polyline {
+  stroke: #fff;
+}
+
 .product__add-cart:hover {
   background: rgba(231, 43, 84, 0.5);
 }
