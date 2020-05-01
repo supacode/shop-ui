@@ -114,19 +114,9 @@ body {
   margin-bottom: 2rem;
   text-align: center;
   border: 2px solid transparent;
-  transition: 0.4s ease-out;
+  transition: 0.4s ease-out box-shadow;
   border-radius: 10px;
   overflow: hidden;
-
-  &:nth-child(2),
-  &:nth-child(2n) {
-    border-left: 1px solid #efefef;
-    border-right: 1px solid #efefef;
-  }
-
-  &:nth-child(4n) {
-    border-right: 0;
-  }
 
   &:hover {
     box-shadow: 0 25px 29px rgba(63, 78, 100, 0.15);
@@ -166,6 +156,53 @@ body {
     width: 100%;
     padding: 1rem;
     opacity: 0;
+  }
+}
+
+.newsletter {
+  background: $light-dark;
+  padding: 2rem 0;
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__content {
+    flex: 0.45;
+    h2 {
+      font-size: 120%;
+      color: $accent;
+      line-height: 1.5;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex: 0.4;
+    &--input {
+      font-size: 100%;
+      transition: 0.4s ease-out;
+    }
+    &--email {
+      background: $light;
+      padding: 10px;
+      flex: 1.5;
+      border-bottom: 1px solid $light;
+      &:focus {
+        border-color: $accent;
+      }
+    }
+    &--submit {
+      flex: 0.5;
+      padding: 10px 30px;
+      background: $accent;
+      color: $light;
+      &:hover,
+      &:focus {
+        background: rgba($accent, 0.5);
+      }
+    }
   }
 }
 

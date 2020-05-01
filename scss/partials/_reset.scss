@@ -18,6 +18,12 @@ a {
   text-decoration: none;
 }
 
+input,
+::placeholder {
+  font-family: inherit;
+  outline: none;
+}
+
 button,
 input[type="submit"] {
   cursor: pointer;

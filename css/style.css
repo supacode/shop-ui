@@ -19,6 +19,30 @@ a {
   text-decoration: none;
 }
 
+input,
+::-webkit-input-placeholder {
+  font-family: inherit;
+  outline: none;
+}
+
+input,
+:-ms-input-placeholder {
+  font-family: inherit;
+  outline: none;
+}
+
+input,
+::-ms-input-placeholder {
+  font-family: inherit;
+  outline: none;
+}
+
+input,
+::placeholder {
+  font-family: inherit;
+  outline: none;
+}
+
 button,
 input[type="submit"] {
   cursor: pointer;
@@ -154,19 +178,10 @@ body {
   margin-bottom: 2rem;
   text-align: center;
   border: 2px solid transparent;
-  -webkit-transition: 0.4s ease-out;
-  transition: 0.4s ease-out;
+  -webkit-transition: 0.4s ease-out box-shadow;
+  transition: 0.4s ease-out box-shadow;
   border-radius: 10px;
   overflow: hidden;
-}
-
-.product:nth-child(2), .product:nth-child(2n) {
-  border-left: 1px solid #efefef;
-  border-right: 1px solid #efefef;
-}
-
-.product:nth-child(4n) {
-  border-right: 0;
 }
 
 .product:hover {
@@ -207,6 +222,76 @@ body {
   width: 100%;
   padding: 1rem;
   opacity: 0;
+}
+
+.newsletter {
+  background: #e3e3e1;
+  padding: 2rem 0;
+}
+
+.newsletter .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.newsletter__content {
+  -webkit-box-flex: 0.45;
+      -ms-flex: 0.45;
+          flex: 0.45;
+}
+
+.newsletter__content h2 {
+  font-size: 120%;
+  color: #e72b54;
+  line-height: 1.5;
+}
+
+.newsletter__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0.4;
+      -ms-flex: 0.4;
+          flex: 0.4;
+}
+
+.newsletter__form--input {
+  font-size: 100%;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+}
+
+.newsletter__form--email {
+  background: #fff;
+  padding: 10px;
+  -webkit-box-flex: 1.5;
+      -ms-flex: 1.5;
+          flex: 1.5;
+  border-bottom: 1px solid #fff;
+}
+
+.newsletter__form--email:focus {
+  border-color: #e72b54;
+}
+
+.newsletter__form--submit {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+  padding: 10px 30px;
+  background: #e72b54;
+  color: #fff;
+}
+
+.newsletter__form--submit:hover, .newsletter__form--submit:focus {
+  background: rgba(231, 43, 84, 0.5);
 }
 
 .main-footer {
