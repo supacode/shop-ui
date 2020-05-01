@@ -156,6 +156,9 @@ body {
     width: 100%;
     padding: 1rem;
     opacity: 0;
+    &:hover {
+      background: rgba($accent, 0.5);
+    }
   }
 }
 

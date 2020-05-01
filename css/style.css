@@ -224,6 +224,10 @@ body {
   opacity: 0;
 }
 
+.product__add-cart:hover {
+  background: rgba(231, 43, 84, 0.5);
+}
+
 .newsletter {
   background: #e3e3e1;
   padding: 2rem 0;
