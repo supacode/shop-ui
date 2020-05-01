@@ -216,6 +216,53 @@ body {
   }
 }
 
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $light-dark;
+  }
+
+  &__product {
+    display: flex;
+    align-items: center;
+  }
+
+  &__quantity {
+    display: flex;
+    align-items: center;
+    font-size: 150%;
+
+    &--add,
+    &--reduce {
+      &:hover {
+        color: $accent;
+      }
+    }
+    &--count {
+      color: $dark;
+      margin: 0 2rem;
+      padding: 0.5rem 1rem;
+      border: $light-dark 2px solid;
+    }
+  }
+
+  &__price {
+    color: $accent;
+    font-weight: bold;
+  }
+
+  &__remove {
+    font-size: 150%;
+    font-weight: bold;
+    &:hover {
+      color: $accent;
+    }
+  }
+}
+
 .main-footer {
   padding: 2rem 0;
   background: $light;

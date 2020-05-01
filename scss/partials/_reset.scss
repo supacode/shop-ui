@@ -27,5 +27,6 @@ input,
 button,
 input[type="submit"] {
   cursor: pointer;
+  outline: none;
   font: inherit;
 }

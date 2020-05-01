@@ -46,6 +46,7 @@ input,
 button,
 input[type="submit"] {
   cursor: pointer;
+  outline: none;
   font: inherit;
 }
 
@@ -308,6 +309,66 @@ body {
 
 .newsletter__form--submit:hover, .newsletter__form--submit:focus {
   background: rgba(231, 43, 84, 0.5);
+}
+
+.cart-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cart-item:not(:last-child) {
+  border-bottom: 1px solid #e3e3e1;
+}
+
+.cart-item__product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cart-item__quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 150%;
+}
+
+.cart-item__quantity--add:hover, .cart-item__quantity--reduce:hover {
+  color: #e72b54;
+}
+
+.cart-item__quantity--count {
+  color: #333;
+  margin: 0 2rem;
+  padding: 0.5rem 1rem;
+  border: #e3e3e1 2px solid;
+}
+
+.cart-item__price {
+  color: #e72b54;
+  font-weight: bold;
+}
+
+.cart-item__remove {
+  font-size: 150%;
+  font-weight: bold;
+}
+
+.cart-item__remove:hover {
+  color: #e72b54;
 }
 
 .main-footer {
