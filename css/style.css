@@ -108,7 +108,6 @@ body {
 .hero {
   width: 100%;
   position: relative;
-  overflow: hidden;
 }
 
 .hero .hero__item {
@@ -588,12 +587,15 @@ body {
   background: #fff;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .hero .row,
   .main-header .row,
   .newsletter .row,
   .main-footer .row {
     padding: 0 2.5rem;
+  }
+  .main-header {
+    padding: 1rem 0;
   }
   .hero {
     width: 100%;
@@ -602,13 +604,16 @@ body {
   }
   .hero .hero__item--content {
     width: 50%;
-    top: 2%;
+    top: 10%;
   }
   .hero .hero__item--btn {
     padding: 0.5rem 1rem;
   }
   .hero .hero__item--title {
-    font-size: 200%;
+    font-size: 180%;
+  }
+  .hero .hero__item--text {
+    margin: 1rem 0;
   }
   .products .product {
     width: 30%;
@@ -648,9 +653,17 @@ body {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
+  .hero .hero__item--content {
+    width: 50%;
+    top: 10%;
+  }
+  .hero .hero__item--title {
+    font-size: 150%;
+  }
   .products {
     padding: 0 2rem;
+    margin-bottom: 1rem;
   }
   .products .product {
     width: 50%;
@@ -660,6 +673,17 @@ body {
 @media (max-width: 450px) {
   .products .product {
     width: 90%;
+  }
+  .newsletter__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .newsletter__form--submit, .newsletter__form--email {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
 }
 /*# sourceMappingURL=style.css.map */

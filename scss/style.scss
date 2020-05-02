@@ -52,7 +52,6 @@ body {
 .hero {
   width: 100%;
   position: relative;
-  overflow: hidden;
 
   .hero__item {
     color: $dark;
@@ -430,7 +429,7 @@ body {
   background: $light;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .hero,
   .main-header,
   .newsletter,
@@ -440,6 +439,10 @@ body {
     }
   }
 
+  .main-header {
+    padding: 1rem 0;
+  }
+
   .hero {
     width: 100%;
     position: relative;
@@ -447,13 +450,17 @@ body {
     .hero__item {
       &--content {
         width: 50%;
-        top: 2%;
+        top: 10%;
       }
       &--btn {
         padding: 0.5rem 1rem;
       }
       &--title {
-        font-size: 200%;
+        font-size: 180%;
+      }
+
+      &--text {
+        margin: 1rem 0;
       }
     }
   }
@@ -492,19 +499,46 @@ body {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
+  .hero {
+    .hero__item {
+      &--content {
+        width: 50%;
+        top: 10%;
+      }
+
+      &--title {
+        font-size: 150%;
+      }
+    }
+  }
+
   .products {
     padding: 0 2rem;
+    margin-bottom: 1rem;
     .product {
       width: 50%;
     }
   }
 }
 
+@media (max-width: 650px) {
+}
+
 @media (max-width: 450px) {
   .products {
     .product {
       width: 90%;
+    }
+  }
+
+  .newsletter {
+    &__form {
+      flex-direction: column;
+      &--submit,
+      &--email {
+        flex: 1;
+      }
     }
   }
 }
