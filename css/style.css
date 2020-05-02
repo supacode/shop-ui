@@ -185,14 +185,14 @@ body {
   overflow: hidden;
 }
 
-.product:hover {
+.product:hover, .product:focus {
   -webkit-box-shadow: 0 25px 29px rgba(63, 78, 100, 0.15);
           box-shadow: 0 25px 29px rgba(63, 78, 100, 0.15);
   border-style: solid;
   border-color: #ebebeb;
 }
 
-.product:hover .product__add-cart {
+.product:hover .product__add-cart, .product:focus .product__add-cart {
   opacity: 1;
 }
 
