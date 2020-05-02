@@ -57,6 +57,7 @@ body {
 .row {
   margin: auto;
   max-width: 1100px;
+  overflow: auto;
 }
 
 /* Main header */
@@ -64,10 +65,10 @@ body {
   background: #fff;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  padding: 2rem 0;
 }
 
 .main-header .row {
-  padding: 2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,7 +125,7 @@ body {
 
 .hero .hero__item--title {
   font-weight: lighter;
-  font-size: 3rem;
+  font-size: 250%;
   color: #e72b54;
   margin-bottom: 1rem;
 }
@@ -176,7 +177,6 @@ body {
 
 .product {
   width: 25%;
-  margin-bottom: 2rem;
   text-align: center;
   border: 2px solid transparent;
   -webkit-transition: 0.4s ease-out box-shadow;
@@ -194,6 +194,7 @@ body {
 
 .product:hover .product__add-cart, .product:focus .product__add-cart {
   opacity: 1;
+  pointer-events: all;
 }
 
 .product__price {
@@ -217,7 +218,7 @@ body {
   background: #e72b54;
   -webkit-transition: 0.4s ease-out;
   transition: 0.4s ease-out;
-  pointer-events: all;
+  pointer-events: none;
   color: #fff;
   display: block;
   width: 100%;
@@ -225,14 +226,14 @@ body {
   opacity: 0;
 }
 
-.product__add-cart svg path,
-.product__add-cart svg circle,
-.product__add-cart svg polyline {
-  stroke: #fff;
-}
-
 .product__add-cart:hover {
   background: #b11436;
+}
+
+.product svg path,
+.product svg circle,
+.product svg polyline {
+  stroke: #fff;
 }
 
 .newsletter {
@@ -549,6 +550,8 @@ body {
 }
 
 .product-detail__preview {
+  border-right: 1px dashed #b2b2ac;
+  padding-right: 2rem;
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -585,12 +588,30 @@ body {
   background: #fff;
 }
 
-@media (max-width: 700px) {
-  .main-header .row {
-    display: block;
+@media (max-width: 900px) {
+  .hero .row,
+  .main-header .row,
+  .newsletter .row,
+  .main-footer .row {
+    padding: 0 2.5rem;
   }
-  .main-header__logo {
-    text-align: center;
+  .hero {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero .hero__item--content {
+    width: 50%;
+    top: 2%;
+  }
+  .hero .hero__item--btn {
+    padding: 0.5rem 1rem;
+  }
+  .hero .hero__item--title {
+    font-size: 200%;
+  }
+  .products .product {
+    width: 30%;
   }
 }
 /*# sourceMappingURL=style.css.map */

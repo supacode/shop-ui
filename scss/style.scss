@@ -9,15 +9,16 @@ body {
 .row {
   margin: auto;
   max-width: $page-width;
+  overflow: auto;
 }
 
 /* Main header */
 .main-header {
   background: $light;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  padding: 2rem 0;
 
   .row {
-    padding: 2rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,7 +67,7 @@ body {
 
     &--title {
       font-weight: lighter;
-      font-size: 3rem;
+      font-size: 250%;
       color: $accent;
       margin-bottom: 1rem;
     }
@@ -111,7 +112,6 @@ body {
 
 .product {
   width: 25%;
-  margin-bottom: 2rem;
   text-align: center;
   border: 2px solid transparent;
   transition: 0.4s ease-out box-shadow;
@@ -127,6 +127,7 @@ body {
     }
     .product__add-cart {
       opacity: 1;
+      pointer-events: all;
     }
   }
 
@@ -149,16 +150,9 @@ body {
   }
 
   &__add-cart {
-    svg {
-      path,
-      circle,
-      polyline {
-        stroke: $light;
-      }
-    }
     background: $accent;
     transition: 0.4s ease-out;
-    pointer-events: all;
+    pointer-events: none;
     color: $light;
     display: block;
     width: 100%;
@@ -166,6 +160,13 @@ body {
     opacity: 0;
     &:hover {
       background: darken($accent, 15);
+    }
+  }
+  svg {
+    path,
+    circle,
+    polyline {
+      stroke: $light;
     }
   }
 }
@@ -404,6 +405,8 @@ body {
   }
 
   &__preview {
+    border-right: 1px dashed darken($light-dark, 20);
+    padding-right: 2rem;
     width: 50%;
     display: flex;
     &--image {
@@ -427,14 +430,37 @@ body {
   background: $light;
 }
 
-@media (max-width: 700px) {
-  .main-header {
+@media (max-width: 900px) {
+  .hero,
+  .main-header,
+  .newsletter,
+  .main-footer {
     .row {
-      display: block;
+      padding: 0 2.5rem;
     }
+  }
 
-    &__logo {
-      text-align: center;
+  .hero {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    .hero__item {
+      &--content {
+        width: 50%;
+        top: 2%;
+      }
+      &--btn {
+        padding: 0.5rem 1rem;
+      }
+      &--title {
+        font-size: 200%;
+      }
+    }
+  }
+
+  .products {
+    .product {
+      width: 30%;
     }
   }
 }
