@@ -469,6 +469,117 @@ body {
   margin-left: 1rem;
 }
 
+/* Product detail */
+.product-detail {
+  margin: 3rem 0;
+}
+
+.product-detail .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.product-detail__add-to-cart {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 150%;
+  background: #e72b54;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  -webkit-transition: 0.4s ease-out background;
+  transition: 0.4s ease-out background;
+}
+
+.product-detail__add-to-cart:hover {
+  background: #9b112f;
+}
+
+.product-detail__add-to-cart svg {
+  margin-right: 1rem;
+}
+
+.product-detail__add-to-cart svg polyline,
+.product-detail__add-to-cart svg path,
+.product-detail__add-to-cart svg circle {
+  stroke: #fff;
+}
+
+.product-detail__content {
+  width: 45%;
+}
+
+.product-detail__content--title {
+  font-size: 150%;
+  line-height: 2;
+  color: #e72b54;
+}
+
+.product-detail__content--description {
+  line-height: 2;
+  margin-bottom: 2rem;
+}
+
+.product-detail__price {
+  line-height: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-detail__price--normal {
+  margin-right: 1rem;
+  font-size: 2rem;
+  color: #e72b54;
+}
+
+.product-detail__price--old {
+  text-decoration: line-through;
+}
+
+.product-detail__preview {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product-detail__preview--image {
+  -webkit-box-flex: 1.5;
+      -ms-flex: 1.5;
+          flex: 1.5;
+  margin-left: 1rem;
+}
+
+.product-detail__preview--thumbnails {
+  -webkit-box-flex: 0.4;
+      -ms-flex: 0.4;
+          flex: 0.4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.product-detail__preview--thumbnails img {
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
 .main-footer {
   padding: 2rem 0;
   background: #fff;
