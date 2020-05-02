@@ -613,5 +613,53 @@ body {
   .products .product {
     width: 30%;
   }
+  .newsletter .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .newsletter__content {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .newsletter__content h2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-bottom: 1rem;
+  }
+  .newsletter__content h2 svg {
+    height: 50px;
+    width: 50px;
+  }
+  .newsletter__form {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 80%;
+  }
+}
+
+@media (max-width: 700px) {
+  .products {
+    padding: 0 2rem;
+  }
+  .products .product {
+    width: 50%;
+  }
+}
+
+@media (max-width: 450px) {
+  .products .product {
+    width: 90%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

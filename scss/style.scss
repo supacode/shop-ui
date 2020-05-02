@@ -463,4 +463,48 @@ body {
       width: 30%;
     }
   }
+
+  .newsletter {
+    .row {
+      flex-direction: column;
+    }
+
+    &__content {
+      flex: 1;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 2rem;
+      h2 {
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 1rem;
+        svg {
+          height: 50px;
+          width: 50px;
+        }
+      }
+    }
+
+    &__form {
+      flex: 1;
+      width: 80%;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .products {
+    padding: 0 2rem;
+    .product {
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .products {
+    .product {
+      width: 90%;
+    }
+  }
 }
