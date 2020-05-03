@@ -114,6 +114,20 @@ body {
   margin-bottom: 1rem;
 }
 
+.main-header__nav li a svg path,
+.main-header__nav li a svg circle,
+.main-header__nav li a svg polyline {
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+  stroke: #333;
+}
+
+.main-header__nav li a:hover svg path,
+.main-header__nav li a:hover svg circle,
+.main-header__nav li a:hover svg polyline {
+  stroke: #e72b54;
+}
+
 .main-header__nav li a .badge {
   background: #e72b54;
   font-size: 90%;
