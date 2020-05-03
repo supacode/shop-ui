@@ -693,7 +693,7 @@ body {
     padding: 0;
   }
   .hero__item {
-    min-height: 100vh;
+    min-height: 80vh;
     background-image: url("../images/slide/slide-05-mobile.jpg");
     background-size: cover;
   }
