@@ -621,13 +621,20 @@ body {
           margin: 0.5rem 0;
         }
         &--count {
-          width: 35%;
+          width: 50%;
         }
       }
 
       &__price {
         font-size: 100%;
         margin-right: 1rem;
+      }
+    }
+
+    &__footer {
+      flex-direction: column-reverse;
+      p {
+        margin: 0.5rem 0;
       }
     }
   }
