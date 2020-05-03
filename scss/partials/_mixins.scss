@@ -1,0 +1,9 @@
+@mixin primary-btn {
+  background: $accent;
+  transition: 0.4s ease-out background;
+
+  &:hover,
+  &:focus {
+    background: darken($color: $accent, $amount: 20);
+  }
+}

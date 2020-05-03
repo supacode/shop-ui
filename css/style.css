@@ -156,20 +156,18 @@ body {
 }
 
 .hero__item--btn {
-  border: 2px solid #e72b54;
   background: #e72b54;
+  -webkit-transition: 0.4s ease-out background;
+  transition: 0.4s ease-out background;
   border-radius: 2rem;
   color: #fff;
   padding: 0.8rem 2rem;
   display: inline-block;
   font-weight: 600;
-  -webkit-transition: 0.4s ease-out;
-  transition: 0.4s ease-out;
 }
 
-.hero__item--btn:hover {
-  -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+.hero__item--btn:hover, .hero__item--btn:focus {
+  background: #9b112f;
 }
 
 /* Products */
@@ -194,8 +192,8 @@ body {
   width: 25%;
   text-align: center;
   border: 2px solid transparent;
-  -webkit-transition: 0.4s ease-out box-shadow;
-  transition: 0.4s ease-out box-shadow;
+  -webkit-transition: 0.4s ease-out border;
+  transition: 0.4s ease-out border;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -230,19 +228,19 @@ body {
 }
 
 .product__add-cart {
-  background: #e72b54;
-  -webkit-transition: 0.4s ease-out;
-  transition: 0.4s ease-out;
   pointer-events: none;
   color: #fff;
   display: block;
   width: 100%;
   padding: 1rem;
   opacity: 0;
+  background: #e72b54;
+  -webkit-transition: 0.4s ease-out background;
+  transition: 0.4s ease-out background;
 }
 
-.product__add-cart:hover {
-  background: #b11436;
+.product__add-cart:hover, .product__add-cart:focus {
+  background: #9b112f;
 }
 
 .product svg path,
@@ -330,12 +328,14 @@ body {
       -ms-flex: 0.5;
           flex: 0.5;
   padding: 10px 30px;
-  background: #e72b54;
   color: #fff;
+  background: #e72b54;
+  -webkit-transition: 0.4s ease-out background;
+  transition: 0.4s ease-out background;
 }
 
 .newsletter__form--submit:hover, .newsletter__form--submit:focus {
-  background: rgba(231, 43, 84, 0.5);
+  background: #9b112f;
 }
 
 .cart-item {
@@ -455,15 +455,15 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: #e72b54;
   padding: 1rem 3rem;
   color: #fff;
   border-radius: 5px;
+  background: #e72b54;
   -webkit-transition: 0.4s ease-out background;
   transition: 0.4s ease-out background;
 }
 
-.cart__footer--checkout-btn:hover {
+.cart__footer--checkout-btn:hover, .cart__footer--checkout-btn:focus {
   background: #9b112f;
 }
 
@@ -511,14 +511,14 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-size: 150%;
-  background: #e72b54;
   padding: 0.8rem 1.5rem;
   border-radius: 5px;
+  background: #e72b54;
   -webkit-transition: 0.4s ease-out background;
   transition: 0.4s ease-out background;
 }
 
-.product-detail__add-to-cart:hover {
+.product-detail__add-to-cart:hover, .product-detail__add-to-cart:focus {
   background: #9b112f;
 }
 
@@ -604,17 +604,17 @@ body {
 
 /* Auth Form start*/
 .auth {
-  background: #e4e4e2;
+  background: #e5e5e3;
 }
 
 .auth-form__wrap {
   background: #fff;
   border-radius: 5px;
-  max-width: 500px;
-  margin: 3rem auto;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.144) 0px 1.5rem 3rem 1rem;
-          box-shadow: rgba(0, 0, 0, 0.144) 0px 1.5rem 3rem 1rem;
-  padding: 2rem;
+  max-width: 600px;
+  margin: 4rem auto;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 1.5rem 3rem 1rem;
+          box-shadow: rgba(0, 0, 0, 0.05) 0px 1.5rem 3rem 1rem;
+  padding: 2rem 3rem;
 }
 
 .auth-form__wrap--title {
@@ -654,18 +654,30 @@ body {
 }
 
 .auth-form__submit {
-  background: #e72b54;
   color: #fff;
   border-radius: 5px;
   padding: 1rem 2rem;
-  -webkit-transition: 0.4s ease-out;
-  transition: 0.4s ease-out;
+  font-size: 100% !important;
+  background: #e72b54;
+  -webkit-transition: 0.4s ease-out background;
+  transition: 0.4s ease-out background;
 }
 
-.auth-form__submit:focus, .auth-form__submit:hover {
+.auth-form__submit:hover, .auth-form__submit:focus {
   background: #9b112f;
-  -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
+}
+
+.auth-form__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.auth-form__footer a:hover {
+  color: #e72b54;
 }
 
 /* Auth Form end*/
@@ -866,6 +878,11 @@ body {
         -ms-flex: 1;
             flex: 1;
     width: 100%;
+  }
+  .auth-form__wrap {
+    margin: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 }
 
