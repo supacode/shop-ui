@@ -67,7 +67,7 @@ body {
   background: #fff;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  padding: 1.5rem 0;
+  padding: 1rem 0;
 }
 
 .main-header .row {
@@ -718,10 +718,7 @@ body {
   .main-footer .row,
   .product-detail .row,
   .cart .row {
-    padding: 0 2.5rem;
-  }
-  .main-header {
-    padding: 1rem 0;
+    padding: 0 2rem;
   }
   .hero {
     width: 100%;
@@ -937,6 +934,7 @@ body {
     width: 100%;
   }
   .auth-form__wrap {
+    padding: 2rem;
     width: 100%;
     margin: auto;
     -webkit-box-shadow: none;
@@ -947,6 +945,16 @@ body {
 @media (max-width: 450px) {
   .products .product {
     width: 90%;
+  }
+  .auth-form__footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    line-height: 2.5;
   }
   .newsletter__form {
     -webkit-box-orient: vertical;

@@ -17,7 +17,7 @@ body {
 .main-header {
   background: $light;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  padding: 1.5rem 0;
+  padding: 1rem 0;
 
   .row {
     display: flex;
@@ -526,12 +526,8 @@ body {
   .product-detail,
   .cart {
     .row {
-      padding: 0 2.5rem;
+      padding: 0 2rem;
     }
-  }
-
-  .main-header {
-    padding: 1rem 0;
   }
 
   .hero {
@@ -740,6 +736,7 @@ body {
 
   .auth-form {
     &__wrap {
+      padding: 2rem;
       width: 100%;
       margin: auto;
       box-shadow: none;
@@ -751,6 +748,14 @@ body {
   .products {
     .product {
       width: 90%;
+    }
+  }
+
+  .auth-form {
+    &__footer {
+      flex-direction: column;
+      align-items: center;
+      line-height: 2.5;
     }
   }
 
