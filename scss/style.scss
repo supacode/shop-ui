@@ -16,7 +16,7 @@ body {
 .main-header {
   background: $light;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  padding: 2rem 0;
+  padding: 1.5rem 0;
 
   .row {
     display: flex;
@@ -42,8 +42,28 @@ body {
       margin: 0 1rem;
     }
 
+    &--cart-icon {
+      padding-right: 0.3rem;
+    }
+
     li a {
       color: $dark;
+      display: inline-block;
+      position: relative;
+      padding-top: 1rem;
+      margin-bottom: 1rem;
+
+      .badge {
+        background: $accent;
+        font-size: 90%;
+        color: $light;
+        border-radius: 50%;
+        font-weight: bold;
+        position: absolute;
+        right: -10px;
+        top: 0;
+        padding: 5px 10px;
+      }
     }
   }
 }
