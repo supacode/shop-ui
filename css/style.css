@@ -673,7 +673,8 @@ body {
     padding: 0;
   }
   .hero__item {
-    background-image: url("../images/slide/slide-02-mobile.jpg");
+    min-height: 100vh;
+    background-image: url("../images/slide/slide-05-mobile.jpg");
     background-size: cover;
   }
   .hero__item:after {
@@ -700,7 +701,7 @@ body {
   .hero__item--content {
     text-align: center;
     width: 90% !important;
-    padding: 7rem 0;
+    padding: 10rem 0;
     margin: auto;
     position: relative;
     top: 0;
