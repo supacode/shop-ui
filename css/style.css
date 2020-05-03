@@ -17,6 +17,7 @@ li {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 input,
@@ -595,7 +596,7 @@ body {
 }
 
 .product-detail__preview--thumbnails img {
-  max-width: 100px;
+  max-height: 150px;
   cursor: pointer;
   margin-bottom: 1rem;
 }
@@ -714,6 +715,8 @@ body {
     margin-left: 0;
   }
   .product-detail__preview--thumbnails {
+    width: 100%;
+    overflow-x: scroll;
     -webkit-box-flex: 0.4;
         -ms-flex: 0.4;
             flex: 0.4;

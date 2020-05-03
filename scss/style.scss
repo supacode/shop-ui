@@ -429,7 +429,7 @@ body {
     }
     &--thumbnails {
       img {
-        max-width: 100px;
+        max-height: 150px;
         cursor: pointer;
         margin-bottom: 1rem;
       }
@@ -542,6 +542,8 @@ body {
         margin-left: 0;
       }
       &--thumbnails {
+        width: 100%;
+        overflow-x: scroll;
         img {
           margin: 0.5rem 0.5rem 0 0;
         }
