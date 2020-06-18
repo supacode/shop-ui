@@ -12,6 +12,12 @@ body {
   max-width: $page-width;
 }
 
+.row__wrap {
+  background: #fff;
+  padding: 2rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.04);
+}
+
 /* Main header */
 
 @import 'components/main-header';
@@ -20,28 +26,7 @@ body {
 @import 'components/hero';
 
 /* Products */
-
-.products {
-  &__category {
-    max-width: $page-width;
-    margin: 1.5rem auto 1rem;
-    color: $accent;
-    font-weight: 300;
-    font-size: 1.5rem;
-    padding-bottom: 0.6rem;
-    transition: border 400ms linear;
-    &:hover {
-      color: lighten($color: $accent, $amount: 20%);
-    }
-  }
-  padding: 2rem 0;
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-  }
-}
+@import 'components/products-section-home';
 
 @import 'components/product';
 

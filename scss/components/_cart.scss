@@ -1,9 +1,11 @@
 .cart {
+  padding: 2rem 0;
+
   &-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid $light-dark;
+    border-bottom: 1px solid lighten($light-dark, 5);
     padding: 1rem;
     position: relative;
     &__product {
@@ -12,6 +14,9 @@
       margin-right: 1rem;
       align-items: center;
       text-align: center;
+      &--img {
+        max-height: 150px;
+      }
       &--link {
         &:hover {
           color: $accent;
@@ -31,7 +36,8 @@
       }
       &--count {
         width: 25%;
-        border: $light-dark 2px solid;
+        border: $light-dark 1px solid;
+        background: #fff;
         padding: 10px;
         text-align: center;
         color: $dark;
@@ -42,6 +48,7 @@
     &__price {
       color: $accent;
       font-size: 120%;
+      font-weight: 500;
       right: 15%;
       bottom: 15%;
     }

@@ -12,10 +12,7 @@
     position: relative;
     z-index: 10;
     box-shadow: 0 0 1rem rgba(63, 78, 100, 0.15);
-    border: {
-      style: solid;
-      color: rgba(235, 235, 235, 1);
-    }
+
     .product__add-cart {
       opacity: 1;
       pointer-events: all;
