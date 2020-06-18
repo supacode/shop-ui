@@ -54,13 +54,15 @@
   }
 
   &__preview {
-    border-right: 1px dashed darken($light-dark, 20);
     padding-right: 2rem;
     width: 50%;
     display: flex;
     &--image {
       flex: 1.5;
       margin-left: 1rem;
+      img {
+        width: 100%;
+      }
     }
     &--thumbnails {
       img {

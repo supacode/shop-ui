@@ -1,16 +1,16 @@
 .hero {
   width: 100%;
-  position: relative;
 
   &__item {
+    background: {
+      image: url('../../images/slide/slide-05.jpg');
+      size: cover;
+    }
     color: $dark;
     line-height: 1.5;
-
     &--content {
-      width: 30%;
-      position: absolute;
-      top: 15%;
-      z-index: 10;
+      width: 40%;
+      padding: 8% 0;
     }
 
     &--title {
