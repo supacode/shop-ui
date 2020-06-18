@@ -43,6 +43,8 @@
       padding: 10px;
       flex: 1.5;
       border-bottom: 1px solid $light;
+      border-radius: 0.5rem 0 0 0.5rem;
+
       &:focus {
         border-color: $accent;
       }
@@ -51,6 +53,7 @@
       flex: 0.5;
       padding: 10px 30px;
       color: $light;
+      border-radius: 0 0.5rem 0.5rem 0;
       @include primary-btn;
     }
   }

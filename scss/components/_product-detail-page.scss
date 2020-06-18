@@ -26,7 +26,7 @@
   }
 
   &__content {
-    width: 45%;
+    width: 46%;
     &--title {
       font-size: 150%;
       line-height: 2;
@@ -54,19 +54,20 @@
   }
 
   &__preview {
-    padding-right: 2rem;
     width: 50%;
     display: flex;
     &--image {
       flex: 1.5;
       margin-left: 1rem;
       img {
+        border-radius: 5px;
         width: 100%;
       }
     }
     &--thumbnails {
       img {
         max-height: 150px;
+        border-radius: 5px;
         cursor: pointer;
         margin-bottom: 1rem;
       }

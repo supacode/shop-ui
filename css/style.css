@@ -107,10 +107,12 @@ body {
 
 .main-header__nav li a {
   color: #333;
-  display: inline-block;
-  position: relative;
-  padding-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.main-header__nav li a svg {
+  width: 33px;
+  height: 33px;
 }
 
 .main-header__nav li a svg path,
@@ -127,15 +129,28 @@ body {
   stroke: #e72b54;
 }
 
-.main-header__nav li a .badge {
+.cart-icon {
   background: #e72b54;
-  font-size: 90%;
-  color: #fff;
-  border-radius: 50%;
-  position: absolute;
-  right: -5px;
-  top: 0;
-  padding: 5px 10px;
+  -webkit-transition: 0.4s ease-out background;
+  transition: 0.4s ease-out background;
+  padding: 0.7rem 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 2rem 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cart-icon:hover, .cart-icon:focus {
+  background: #9b112f;
+}
+
+.cart-icon svg path,
+.cart-icon svg circle,
+.cart-icon svg polyline {
+  stroke: #fff !important;
 }
 
 /* Hero */
@@ -170,7 +185,7 @@ body {
   background: #e72b54;
   -webkit-transition: 0.4s ease-out background;
   transition: 0.4s ease-out background;
-  border-radius: 2rem;
+  border-radius: 2rem 1rem;
   color: #fff;
   padding: 0.8rem 2rem;
   display: inline-block;
@@ -368,6 +383,7 @@ body {
       -ms-flex: 1.5;
           flex: 1.5;
   border-bottom: 1px solid #fff;
+  border-radius: 0.5rem 0 0 0.5rem;
 }
 
 .newsletter__form--email:focus {
@@ -380,6 +396,7 @@ body {
           flex: 0.5;
   padding: 10px 30px;
   color: #fff;
+  border-radius: 0 0.5rem 0.5rem 0;
   background: #e72b54;
   -webkit-transition: 0.4s ease-out background;
   transition: 0.4s ease-out background;
@@ -595,7 +612,7 @@ body {
 }
 
 .product-detail__content {
-  width: 45%;
+  width: 46%;
 }
 
 .product-detail__content--title {
@@ -630,7 +647,6 @@ body {
 }
 
 .product-detail__preview {
-  padding-right: 2rem;
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -645,6 +661,7 @@ body {
 }
 
 .product-detail__preview--image img {
+  border-radius: 5px;
   width: 100%;
 }
 
@@ -663,19 +680,21 @@ body {
 
 .product-detail__preview--thumbnails img {
   max-height: 150px;
+  border-radius: 5px;
   cursor: pointer;
   margin-bottom: 1rem;
 }
 
 .auth {
   background: #efefee;
+  padding: 3rem 0;
 }
 
 .auth-form__wrap {
   background: #fff;
   border-radius: 5px;
   max-width: 600px;
-  margin: 4rem auto;
+  margin: 0 auto;
   -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 1.5rem 3rem 1rem;
           box-shadow: rgba(0, 0, 0, 0.05) 0px 1.5rem 3rem 1rem;
   padding: 2rem 3rem;

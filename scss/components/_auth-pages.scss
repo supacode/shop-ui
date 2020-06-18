@@ -2,6 +2,7 @@
 
 .auth {
   background: lighten($light-dark, 5);
+  padding: 3rem 0;
 }
 
 .auth-form {
@@ -9,7 +10,7 @@
     background: $light;
     border-radius: 5px;
     max-width: 600px;
-    margin: 4rem auto;
+    margin: 0 auto;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 1.5rem 3rem 1rem;
     padding: 2rem 3rem;
 

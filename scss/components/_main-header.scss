@@ -33,12 +33,11 @@
 
     li a {
       color: $dark;
-      display: inline-block;
-      position: relative;
-      padding-top: 1rem;
       margin-bottom: 1rem;
 
       svg {
+        width: 33px;
+        height: 33px;
         path,
         circle,
         polyline {
@@ -56,17 +55,22 @@
           }
         }
       }
+    }
+  }
+}
 
-      .badge {
-        background: $accent;
-        font-size: 90%;
-        color: $light;
-        border-radius: 50%;
-        position: absolute;
-        right: -5px;
-        top: 0;
-        padding: 5px 10px;
-      }
+.cart-icon {
+  @include primary-btn();
+  padding: 0.7rem 1.5rem;
+  display: flex;
+  border-radius: 2rem 1rem;
+  align-items: center;
+
+  svg {
+    path,
+    circle,
+    polyline {
+      stroke: #fff !important;
     }
   }
 }
