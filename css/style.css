@@ -274,6 +274,7 @@ body {
 }
 
 .product figure figcaption {
+  font-weight: 600;
   line-height: 2;
 }
 
@@ -1170,6 +1171,7 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
+    z-index: 5;
     top: 0;
     left: 0;
   }
@@ -1188,6 +1190,7 @@ body {
     padding: 10rem 0;
     margin: auto;
     position: relative;
+    z-index: 10;
     top: 0;
   }
   .banner {
