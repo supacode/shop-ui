@@ -53,7 +53,7 @@ input[type="submit"] {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .row {
@@ -525,7 +525,6 @@ body {
   margin-left: 1rem;
 }
 
-/* Product detail */
 .product-detail {
   margin: 3rem 0;
 }
@@ -642,9 +641,8 @@ body {
   margin-bottom: 1rem;
 }
 
-/* Auth Form start*/
 .auth {
-  background: #e5e5e3;
+  background: #efefee;
 }
 
 .auth-form__wrap {
@@ -726,7 +724,6 @@ body {
   background: #fff;
 }
 
-/* Shop Page Start */
 .banner {
   width: 100%;
   height: 140px;
@@ -942,7 +939,6 @@ body {
   margin: 0 1rem;
 }
 
-/* Shop Page End */
 @media (max-width: 1000px) {
   .hero .row,
   .main-header .row,

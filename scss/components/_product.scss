@@ -1,0 +1,56 @@
+.product {
+  width: 25%;
+  text-align: center;
+  border: 2px solid transparent;
+  transition: 0.4s ease-out border;
+  border-radius: 10px;
+  overflow: hidden;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 25px 29px rgba(63, 78, 100, 0.15);
+    border: {
+      style: solid;
+      color: rgba(235, 235, 235, 1);
+    }
+    .product__add-cart {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+
+  &__price {
+    margin: 1rem 0;
+    font-weight: bold;
+    color: $accent;
+    font-size: 120%;
+    &--was {
+      font-size: 80%;
+      color: $dark;
+      text-decoration: line-through;
+    }
+  }
+
+  figure {
+    figcaption {
+      line-height: 2;
+    }
+  }
+
+  &__add-cart {
+    pointer-events: none;
+    color: $light;
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    opacity: 0;
+    @include primary-btn;
+  }
+  svg {
+    path,
+    circle,
+    polyline {
+      stroke: $light;
+    }
+  }
+}
