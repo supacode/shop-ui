@@ -18,14 +18,12 @@ body {
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.04);
 }
 
-/* Main header */
-
 @import 'components/main-header';
 
-/* Hero */
+@import 'components/search-box';
+
 @import 'components/hero';
 
-/* Products */
 @import 'components/products-section-home';
 
 @import 'components/product';
@@ -38,10 +36,8 @@ body {
 
 @import 'components/auth-pages';
 
-.main-footer {
-  padding: 2rem 0;
-  background: $light;
-}
-
 @import 'components/shop-page';
+
+@import 'components/main-footer';
+
 @import 'partials/responsive';

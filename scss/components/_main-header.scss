@@ -1,12 +1,13 @@
 .main-header {
   background: $light;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.05);
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   position: relative;
   z-index: 10;
 
   .row {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
     align-items: center;
   }
@@ -17,16 +18,22 @@
   }
 
   &__logo {
-    font-size: 2rem;
-    color: $accent;
+    font-size: 180%;
+    h1 {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      color: #fff;
+      border-radius: 1rem 1.5rem;
+      background: $accent;
+    }
   }
 
   &__nav {
     text-align: right;
-
+    flex: 2;
     li {
       display: inline-block;
-      margin: 0 1rem;
+      margin-left: 1.5rem;
     }
 
     &--cart-icon {
@@ -63,11 +70,24 @@
 
 .cart-icon {
   @include primary-btn();
-  padding: 0.7rem 1.5rem;
+  padding: 0.5rem 1rem;
   display: flex;
-  border-radius: 2rem 1rem;
+  border-radius: 1.5rem 1rem;
   align-items: center;
+  position: relative;
 
+  &__count {
+    position: absolute;
+    background: #fff;
+    color: $accent;
+    font-weight: 800;
+    font-size: 80%;
+    padding: 0 5px;
+    left: 60%;
+    top: 15%;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+  }
   svg {
     path,
     circle,

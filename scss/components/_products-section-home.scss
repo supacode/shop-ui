@@ -1,18 +1,8 @@
 .products {
-  padding: 5rem 0 2rem 0;
-
-  &__category {
-    max-width: $page-width;
-    margin: 1rem auto;
-    color: $accent;
-    font-size: 150%;
-    font-weight: 600;
-    transition: border 400ms linear;
-
-    &:hover {
-      color: lighten($color: $accent, $amount: 20%);
-    }
+  &__home {
+    padding: 5rem 0 2rem 0;
   }
+
   .row {
     display: flex;
     flex-wrap: wrap;
