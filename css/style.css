@@ -838,11 +838,11 @@ body {
 
 .banner__heading {
   background: #e72b54;
+  color: #fff;
   display: inline-block;
   padding: 1rem 2rem;
-  border-radius: 1.5rem 1rem;
+  border-radius: 2rem 1rem;
   font-size: 200%;
-  color: #fff;
 }
 
 .shop {
