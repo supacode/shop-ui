@@ -1,3 +1,5 @@
+A UI template for an E-commerce website.
+
 # Demo:
 
 ## https://shopui.netlify.app/
