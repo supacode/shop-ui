@@ -1,0 +1,57 @@
+.newsletter {
+  background: $light-dark;
+  padding: 2rem 0;
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__content {
+    flex: 0.45;
+
+    svg {
+      rect,
+      polyline {
+        stroke: $accent;
+      }
+    }
+
+    h2 {
+      font-size: 120%;
+      color: $accent;
+      line-height: 1.5;
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      span {
+        display: inline-block;
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex: 0.4;
+    &--input {
+      font-size: 100%;
+      transition: 0.4s ease-out;
+    }
+    &--email {
+      background: $light;
+      padding: 10px;
+      flex: 1.5;
+      border-bottom: 1px solid $light;
+      &:focus {
+        border-color: $accent;
+      }
+    }
+    &--submit {
+      flex: 0.5;
+      padding: 10px 30px;
+      color: $light;
+      @include primary-btn;
+    }
+  }
+}
