@@ -1,60 +1,17 @@
 .banner {
   padding: 5rem 0;
-  background: url('/images/slide/slide-04.jpg');
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  background: {
+    image: url('/images/slide/slide-04.jpg');
+    attachment: fixed;
+    size: cover;
+    repeat: no-repeat;
+    position: center center;
+  }
   text-align: center;
   display: grid;
   place-items: center;
 
   &__heading {
     font-size: 2.5rem;
-  }
-}
-
-.category__wrapper {
-  width: 100%;
-  height: 30px;
-  background: rgba($color: $accent, $alpha: 0.5);
-}
-
-.category__list {
-  display: flex;
-
-  &__item {
-    margin-right: 1.5rem;
-    overflow: hidden;
-
-    &.active {
-      a {
-        background: $accent;
-      }
-    }
-  }
-
-  &__link {
-    color: $light;
-    line-height: 30px;
-    font-size: 1rem;
-    padding: 0.5rem 2rem;
-    transition: all 0.3s ease;
-    box-sizing: border-box;
-
-    &:hover {
-      background: $accent;
-    }
-  }
-}
-
-.shop {
-  display: flex;
-  transition: all 300ms ease-in-out;
-
-  .products {
-    grid-row: 1;
-    width: 100%;
-    margin: 0 1rem;
   }
 }
